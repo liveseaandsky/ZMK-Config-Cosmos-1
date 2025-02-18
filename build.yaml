@@ -5,8 +5,8 @@
 # pass flags to the build command, `snippet` to add a Zephyr snippet, and
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
- board: [ "nice_nano_v2" ]
- shield: [ "Cosmos", "1_right" ]
+# board: [ "nice_nano_v2" ]
+# shield: [ "Cosmos", "1_right" ]
  include:
    - board: nice_nano_v2
      shield: Cosmos-1_left
@@ -16,4 +16,4 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
----
+# ---
