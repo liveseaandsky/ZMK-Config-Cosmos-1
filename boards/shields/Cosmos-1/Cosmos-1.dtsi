@@ -14,9 +14,7 @@
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
     };
-};
 
-/ {
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
