@@ -22,7 +22,6 @@
 
 #define MEH(key) LS(LC(LA(key)))
 
-// Manually add encoder settings due to refactor - sofle shield has not yet been updated
 / {
     left_encoder: encoder_left {
         compatible = "alps,ec11";
@@ -142,6 +141,16 @@
     };
 };
 
+/ {
+    behaviors {
+        inc_dec_msc: inc_dec_msc {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
+    };
+};
+
 
 / {
     keymap {
@@ -163,7 +172,7 @@
                                                        &kp LCTRL  &kp RET                                     &tdmedia
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 		
 		
@@ -177,7 +186,7 @@
                                                  &trans   &trans                          &trans
 			>;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_msc SCRL_DOWN SCRL_UP>;
 		};
 		
 		
@@ -192,7 +201,7 @@
 
 			>;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_msc SCRL_DOWN SCRL_UP>;
 		};
 
 
@@ -213,7 +222,7 @@
 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 
 
@@ -234,7 +243,7 @@
                                                                 &trans     &trans                                      &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 		
 		
@@ -256,7 +265,7 @@
 
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &msc SCRL_DOWN SCRL_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_msc SCRL_DOWN SCRL_UP>;
         };
 	};
 };
