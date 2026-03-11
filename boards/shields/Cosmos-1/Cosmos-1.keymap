@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define wasd 1
-#define esdf 2c
+#define esdf 2
 #define sym 3
 #define nav 4
 #define SAIL 5
