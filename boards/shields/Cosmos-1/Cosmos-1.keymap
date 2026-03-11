@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define wasd 1
-#define esdf 2
+#define esdf 2c
 #define sym 3
 #define nav 4
 #define SAIL 5
@@ -155,8 +155,8 @@
 &kp TAB       AC(Q)     AC(W)     AC(E)     AC(R)      AC(T)                                AC(Y)        AC(U)     AC(I)      AC(O)     AC(P)      &kp BSPC
 &lt SAIL STAR AC(A)     AC(S)     AC(D)     AC(F)      AC(G)                                AC(H)        AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
 &kp LALT      AC(Z)     AC(X)     AC(C)     AC(V)      AC(B)   &kp C_PLAY_PAUSE             AC(N)        AC(M)     &kp COMMA  &kp DOT   &kp FSLH   &kp NUBS
-                        &kp LWIN  &kp LCTRL &mo nav    &kp LSHFT  &lt sym SPACE                                    &kp RALT   &tdg
-                                                    &kp LCTRL  &kp RET                                     &tdmedia
+                        &kp LWIN  &kp LCTRL &mo nav    &kp LSHFT  &lt sym SPACE                                    &mo nav    &tdg
+                                                       &kp LCTRL  &kp RET                                     &tdmedia
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
