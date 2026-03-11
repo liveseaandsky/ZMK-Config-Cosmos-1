@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config Cosmos1_Left
+    def_bool $(shields_list_contains,Cosmos1_Left)
+
+# No whitespace after the comma or in your part name!
+config Cosmos1_Right
+    def_bool $(shields_list_contains,Cosmos1_Right)

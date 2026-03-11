@@ -9,9 +9,9 @@
 # shield: [ "Cosmos", "1_right" ]
  include:
    - board: nice_nano//zmk
-     shield: Cosmos-1_left
+     shield: Cosmos1_left
    - board: nice_nano//zmk
-     shield: Cosmos-1_right  
+     shield: Cosmos1_right  
    - board: nice_nano//zmk
      shield: settings_reset
 #     snippet: studio-rpc-usb-uart
