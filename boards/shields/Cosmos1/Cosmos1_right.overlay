@@ -48,8 +48,9 @@
     trackball: trackball@0 {
         status = "okay";
         compatible = "pixart,pmw3389";
-        reg = <0>;
+        reg = <10>;
         spi-max-frequency = <2000000>;
+        resolution = <200>; // overflow in 0.5s at 8m/s -> 200 CPI
         irq-gpios = <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         /*   optional features   */
