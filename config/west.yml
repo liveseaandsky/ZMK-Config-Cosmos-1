@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: liveseaandsky
       url-base: https://github.com/liveseaandsky
-    - name: teamspatzenhirn
-      url-base: https://github.com/teamspatzenhirn
+    - name: cnboggs
+      url-base: https://github.com/cnboggs
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -16,9 +16,8 @@ manifest:
     - name: ZMK-Config-Cosmos-1
       remote: liveseaandsky
       revision: main
-    - name: pmw3389_zephyr_driver
-      remote: teamspatzenhirn
-      revision: zephyr
-      path: modules/pmw3389
+    - name: zmk-pmw3389-driver
+      remote: cnboggs
+      revision: pmw3389
   self:
     path: config
