@@ -7,6 +7,15 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
+# Other settings
+
+config ZMK_POINTING
+    default y
+
+# Assuming pointing device uses SPI
+config SPI
+    default y
+
 endif
 
 if Cosmos1_Left || Cosmos1_Right
