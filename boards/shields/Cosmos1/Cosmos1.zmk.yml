@@ -3,11 +3,12 @@ id: cosmos1
 name: Cosmos1
 type: shield
 url: https://github.com/liveseaandsky/ZMK-Config-Cosmos-1
-requires: [pro_micro]
-exposes: [i2c_oled]
+requires: [nice_nano]
+# exposes: [i2c_oled]
 features:
   - keys
   - display
+  - pointer
 siblings:
   - Cosmos1_left
   - Cosmos1_right
