@@ -6,6 +6,8 @@ manifest:
       url-base: https://github.com/liveseaandsky
     - name: teamspatzenhirn
       url-base: https://github.com/teamspatzenhirn
+    - name: carrefinho                            # Prospector Dongle
+      url-base: https://github.com/carrefinho
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -20,5 +22,8 @@ manifest:
       remote: teamspatzenhirn
       revision: zephyr
       path: modules/pmw3389
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: feat/new-status-screens 
   self:
     path: config
