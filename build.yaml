@@ -16,6 +16,9 @@
      shield: settings_reset
    - board: xiao_ble//zmk
      shield: Cosmos1_dongle prospector_adapter
+   - board: xiao_ble//zmk
+     shield: settings_reset
+
 
 #     snippet: studio-rpc-usb-uart
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
