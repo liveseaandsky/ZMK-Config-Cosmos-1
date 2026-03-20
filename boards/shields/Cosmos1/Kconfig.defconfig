@@ -1,4 +1,4 @@
-if Cosmos1_dongle_prospector_adapter
+if Cosmos1_dongle prospector_adapter
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
