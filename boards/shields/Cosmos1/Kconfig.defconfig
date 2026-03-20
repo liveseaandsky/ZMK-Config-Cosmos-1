@@ -1,4 +1,4 @@
-if Cosmos1_Right
+if Cosmos1_dongle_prospector_adapter
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
@@ -9,7 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if Cosmos1_Left || Cosmos1_Right
+if Cosmos1_Left || Cosmos1_Right || Cosmos1_dongle_prospector_adapter
 
 config ZMK_SPLIT
     default y
