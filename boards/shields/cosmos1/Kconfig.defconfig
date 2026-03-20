@@ -9,7 +9,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if cosmos1_Left || cosmos1_Right || cosmos1_Dongle
+if cosmos1_Left || cosmos1_Right || cosmos1_dongle
 
 config ZMK_SPLIT
     default y
