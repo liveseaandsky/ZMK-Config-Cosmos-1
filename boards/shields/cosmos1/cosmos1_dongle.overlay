@@ -1,4 +1,3 @@
-#include "cosmos1.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
