@@ -1,6 +1,6 @@
 file_format: "1"
 id: cosmos1
-name: Cosmos1
+name: Cosmos
 type: shield
 url: https://github.com/liveseaandsky/ZMK-Config-Cosmos-1
 requires: [pro_micro]
@@ -9,6 +9,6 @@ features:
   - keys
   - display
 siblings:
-  - Cosmos1_left
-  - Cosmos1_right
-  - Cosmos1_dongle
+  - cosmos1_left
+  - cosmos1_right
+  - cosmos1_dongle
