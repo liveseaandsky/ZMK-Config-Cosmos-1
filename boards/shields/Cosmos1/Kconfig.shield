@@ -1,10 +1,10 @@
 # No whitespace after the comma or in your part name!
-config Cosmos1_Left
-    def_bool $(shields_list_contains,Cosmos1_left)
+config cosmos1_left
+    def_bool $(shields_list_contains,cosmos1_left)
 
 # No whitespace after the comma or in your part name!
-config Cosmos1_Right
-    def_bool $(shields_list_contains,Cosmos1_right)
+config cosmos1_right
+    def_bool $(shields_list_contains,cosmos1_right)
 
-config Cosmos1_Dongle
-    def_bool $(shields_list_contains,Cosmos1_dongle)
+config cosmos1_dongle
+    def_bool $(shields_list_contains,cosmos1_dongle)

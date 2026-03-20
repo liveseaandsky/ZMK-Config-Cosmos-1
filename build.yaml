@@ -9,13 +9,13 @@
 # shield: [ "Cosmos", "1_right" ]
  include:
    - board: nice_nano//zmk
-     shield: Cosmos1_left
+     shield: cosmos1_left
    - board: nice_nano//zmk
-     shield: Cosmos1_right  
+     shield: cosmos1_right  
    - board: nice_nano//zmk
      shield: settings_reset
    - board: xiao_ble//zmk
-     shield: Cosmos1_dongle prospector_adapter
+     shield: cosmos1_dongle prospector_adapter
    - board: xiao_ble//zmk
      shield: settings_reset
 
