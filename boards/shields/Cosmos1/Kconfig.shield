@@ -6,5 +6,5 @@ config Cosmos1_Left
 config Cosmos1_Right
     def_bool $(shields_list_contains,Cosmos1_right)
 
-config Cosmos1_Right
+config Cosmos1_dongle
     def_bool $(shields_list_contains,Cosmos1_dongle)
