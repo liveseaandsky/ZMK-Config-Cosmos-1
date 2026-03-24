@@ -1,8 +1,8 @@
-if Cosmos1_Right
+if cosmos_Right
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "Cosmos1"
+    default "Cosmos"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -18,7 +18,7 @@ config SPI
 
 endif
 
-if Cosmos1_Left || Cosmos1_Right
+if cosmos_Left || cosmos_Right
 
 config ZMK_SPLIT
     default y

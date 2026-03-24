@@ -1,14 +1,14 @@
 file_format: "1"
-id: cosmos1
-name: Cosmos1
+id: cosmos
+name: Cosmos
 type: shield
 url: https://github.com/liveseaandsky/ZMK-Config-Cosmos-1
 requires: [nice_nano]
 # exposes: [i2c_oled]
 features:
   - keys
-  - display
+  # - display
   - pointer
 siblings:
-  - Cosmos1_left
-  - Cosmos1_right
+  - cosmos_left
+  - cosmos_right

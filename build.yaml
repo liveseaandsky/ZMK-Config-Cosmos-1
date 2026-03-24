@@ -9,9 +9,9 @@
 # shield: [ "Cosmos", "1_right" ]
  include:
    - board: nice_nano//zmk
-     shield: Cosmos1_left
+     shield: cosmos_left
    - board: nice_nano//zmk
-     shield: Cosmos1_right
+     shield: cosmos_right
      snippet: zmk-usb-logging
    - board: nice_nano//zmk
      shield: settings_reset
