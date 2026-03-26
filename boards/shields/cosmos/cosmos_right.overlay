@@ -1,5 +1,6 @@
 #include "cosmos.dtsi"
 #include "pmw3610.dtsi"
+#include "split_input.dtsi"
 
 &default_transform {
     col-offset = <6>;
@@ -8,7 +9,6 @@
 &right_encoder {
     status = "okay";
 };
-
 
 &spi0 {
     status = "okay";
