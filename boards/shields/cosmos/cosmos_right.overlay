@@ -5,8 +5,20 @@
     col-offset = <6>;
 };
 
-/ {
+&right_encoder {
+    status = "okay";
+};
 
+
+&spi0 {
+    status = "okay";
+};
+
+&trackball_split_input { // local trackball *split* input device child node
+	device = <&trackball>;
+};
+
+/ {
     chosen {
         zmk,physical-layout = &physical_layout0;
         // Other chosen items
@@ -33,8 +45,3 @@
             ;
     };
 };
-
-&right_encoder {
-    status = "okay";
-};
-
