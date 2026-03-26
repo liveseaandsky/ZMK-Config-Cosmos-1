@@ -1,9 +1,11 @@
 #include "cosmos.dtsi"
 
-&kscan0 {
-};
-
 / {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
