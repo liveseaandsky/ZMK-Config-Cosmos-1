@@ -3,6 +3,7 @@ include:
     shield: cosmos_left
   - board: nice_nano//zmk
     shield: cosmos_right
+    snippet: zmk-usb-logging
   - board: nice_nano//zmk
     shield: settings_reset
 
