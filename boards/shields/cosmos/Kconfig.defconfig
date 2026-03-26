@@ -1,4 +1,4 @@
-if cosmos1_dongle
+if cosmos_dongle
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
@@ -20,7 +20,7 @@ config BT_MAX_PAIRED
 
 endif
 
-if cosmos1_left || cosmos1_right || cosmos1_dongle
+if cosmos_left || cosmos_right || cosmos_dongle
 
 config ZMK_SPLIT
     default y

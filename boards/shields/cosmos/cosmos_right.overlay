@@ -1,4 +1,4 @@
-#include "cosmos1.dtsi"
+#include "cosmos.dtsi"
 
 &default_transform {
     col-offset = <6>;
