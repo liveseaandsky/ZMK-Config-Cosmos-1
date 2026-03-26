@@ -12,14 +12,13 @@ endif
 if cosmos_left || cosmos_right || cosmos_dongle
 # Other settings
 
-config ZMK_POINTING
-    default y
-
 config ZMK_SPLIT
     default y
 
-# Assuming pointing device uses SPI
-config SPI
+config ZMK_POINTING
     default y
 
+if SHIELD_COSMOS_RIGHT
+config SPI
+    default y
 endif
