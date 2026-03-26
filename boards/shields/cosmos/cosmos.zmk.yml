@@ -11,6 +11,6 @@ features:
   - pointer
   - dongle
 siblings:
-  - cosmos1_left
-  - cosmos1_right
-  - cosmos1_dongle
+  - cosmos_left
+  - cosmos_right
+  - cosmos_dongle
