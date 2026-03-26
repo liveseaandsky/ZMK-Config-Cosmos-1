@@ -1,3 +1,9 @@
+// Can't have the kscan0 here, that one's physical
+/* 
+    Central side is the only one that is aware of .keymap,
+    so put all input processors you want to take effect in input listener here.
+*/
+
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
