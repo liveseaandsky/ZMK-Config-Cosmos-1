@@ -1,0 +1,9 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        transform = <&default_transform>;
+        display-name = "Default Layout";
+    };
+};
