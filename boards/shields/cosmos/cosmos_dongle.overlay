@@ -4,6 +4,11 @@
     so put all input processors you want to take effect in input listener here.
 */
 
+#include "cosmos.dtsi"
+#include "split_input.dtsi"
+#include "cosmos-layouts.dtsi"
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
