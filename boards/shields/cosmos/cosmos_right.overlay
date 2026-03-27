@@ -16,12 +16,6 @@
         steps = <60>;
         status = "okay";
     };
-
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&right_encoder>;
-        triggers-per-rotation = <15>;
-    };
 };
 
 &spi0 {
