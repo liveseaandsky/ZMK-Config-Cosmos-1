@@ -1,4 +1,5 @@
 #include "cosmos.dtsi"
+#include "cosmos-layouts.dtsi"
 #include "pmw3610.dtsi"
 #include "split_input.dtsi"
 
