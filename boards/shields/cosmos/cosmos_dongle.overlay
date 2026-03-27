@@ -6,16 +6,14 @@
 
 #include "cosmos.dtsi"
 #include "split_input.dtsi"
-// #include "cosmos-layouts.dtsi"
+#include "cosmos-layouts.dtsi"
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/matrix_transform.h>
 
-
 &physical_layout0 {
     transform = <&default_transform>;
 };
-
 
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
 	status = "okay";
@@ -29,7 +27,6 @@
 //            <&zip_xy_to_scroll_mapper>;
 //	};
 };
-
 
 / {
     chosen {
