@@ -68,6 +68,9 @@
   };
 };
 
+// Rotate sensor
+#include <#include "input/processors/sensor_rotation.dtsi">
+
 / {
     input_processors {
         sensor_rotation: sensor_rotation {
@@ -77,5 +80,3 @@
         };
     };
 };
-
-#include <#include "input/processors/sensor_rotation.dtsi">
