@@ -9,7 +9,7 @@ manifest:
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: hsgw
-      url-base: https://github.com/hsgw/zmk-feature-sensor_rotation
+      url-base: https://github.com/hsgw/ # Trackball Sensor Rotation
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
