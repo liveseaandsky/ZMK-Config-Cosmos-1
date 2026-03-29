@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: hsgw
-      url-base: https://github.com/hsgw/ # Trackball Sensor Rotation
+    - name: efogdev
+      url-base: https://github.com/efogdev/ # Trackball Sensor Rotation
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -26,8 +26,8 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens 
-    - name: zmk-feature-sensor_rotation
-      remote: hsgw
+    - name: zmk-input-processor-rotate-plane
+      remote: efogdev
       revision: main
   self:
     path: config
