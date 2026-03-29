@@ -21,19 +21,5 @@
         compatible = "zmk,input-listener";
         status = "disabled"; // disable for .keymap to add input processors without undefined reference error
         device = <&trackball_split_input>;
-        input-processors = <&sensor_rotation>;
     };
 };
-
-// Rotate sensor
-/ {
-    input_processors {
-        sensor_rotation: sensor_rotation {
-            compatible = "zmk,input-processor-sensor-rotation";
-            #input-processor-cells = <0>;
-            rotation-angle = <45>;
-        };
-    };
-};
-
-#include <input/processors/sensor_rotation.dtsi>

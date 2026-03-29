@@ -64,6 +64,20 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+    input-processors = <&sensor_rotation>;
   };
 };
 
+
+// Rotate sensor
+/ {
+    input_processors {
+        sensor_rotation: sensor_rotation {
+            compatible = "zmk,input-processor-sensor-rotation";
+            #input-processor-cells = <0>;
+            rotation-angle = <45>;
+        };
+    };
+};
+
+#include <input/processors/sensor_rotation.dtsi>
