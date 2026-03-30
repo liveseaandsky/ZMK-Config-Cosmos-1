@@ -17,6 +17,8 @@
 &spi0 {
     status = "okay";
 };
+
+#include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 &trackball_split_input { // local trackball *split* input device child node
 	device = <&trackball>;
