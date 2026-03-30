@@ -66,11 +66,3 @@
     device = <&trackball>;
     };
 };
-// / {
-//     rotated_trackball_listener {
-//         compatible = "zmk,input-listener";
-//         device = <&zip_rotate_pointer>;
-//     };
-// };
-
-
