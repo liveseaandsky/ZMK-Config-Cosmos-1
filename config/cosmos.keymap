@@ -15,12 +15,12 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //Layers
-#define wasd 1
-#define esdf 2
-#define sym 3
-#define nav 4
-#define SAIL 5
-#define mouse 6
+#define mouse 1
+#define wasd 2
+#define esdf 3
+#define sym 4
+#define nav 5
+#define SAIL 6
 
 
 #define MEH(key) LS(LC(LA(key)))
