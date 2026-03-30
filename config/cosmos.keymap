@@ -20,6 +20,8 @@
 #define sym 3
 #define nav 4
 #define SAIL 5
+#define mouse 6
+
 
 #define MEH(key) LS(LC(LA(key)))
 	
