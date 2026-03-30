@@ -61,6 +61,10 @@
 };
 
 #include <input/processors/rotate_plane.dtsi>
+&zip_rotate_pointer {
+    angle = <340>;
+    sync-window = <2>; // msec
+};
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
