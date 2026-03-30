@@ -39,8 +39,7 @@
 / {
     rotated_pointer_plane {
         compatible = "zmk,input-listener";
-        device = <&zip_rotate_pointer>,
-            <&zip_xy_transform>;
+        device = <&zip_rotate_pointer>;
     };
 };
 
