@@ -60,9 +60,24 @@
     };
 };
 
-// / {
-//   trackball_listener {
-//     compatible = "zmk,input-listener";
-//     device = <&trackball>;
-//     };
-// };
+#include <input/processors/rotate_plane.dtsi>
+&zip_rotate_pointer {
+    angle = <340>;
+    sync-window = <2>; // msec
+};
+/ {
+  trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&trackball>;
+    input-processors = <&zip_rotate_pointer>;
+    };
+};
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+/ {
+    rotated_trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&zip_rotate_pointer>;
+        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+    };
+};
