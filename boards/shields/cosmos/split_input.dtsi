@@ -6,6 +6,8 @@
     About input split device: https://zmk.dev/docs/development/hardware-integration/pointing#shared-configuration-1
 */
 
+#include <input/processors.dtsi>
+
 /{
     split_inputs { // split input devices
         #address-cells = <1>;
