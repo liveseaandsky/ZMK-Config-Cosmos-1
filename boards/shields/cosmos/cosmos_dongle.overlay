@@ -35,6 +35,12 @@
 //            <&zip_xy_to_scroll_mapper>;
 //	};
 };
+/ {
+    rotated_pointer_plane {
+        compatible = "zmk,input-listener";
+        device = <&zip_rotate_pointer>;
+    };
+};
 
 / {
     chosen {
