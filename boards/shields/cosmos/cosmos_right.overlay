@@ -20,9 +20,15 @@
 
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <input/processors/rotate_plane.dtsi>
+&zip_rotate_pointer {
+    angle = <340>;
+    sync-window = <2>; // msec
+};
 &trackball_split_input { // local trackball *split* input device child node
 	device = <&trackball>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+        <&zip_rotate_pointer>;
 };
 
 / {
