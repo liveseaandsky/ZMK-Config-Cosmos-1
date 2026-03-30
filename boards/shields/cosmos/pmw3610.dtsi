@@ -66,8 +66,7 @@
 //     sync-window = <2>; // msec
 // };
 
-#include <dt-bindings/zmk/input_transform.h>
-/ {
+#include <dt-bindings/zmk/input_transform.h>/ {
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
