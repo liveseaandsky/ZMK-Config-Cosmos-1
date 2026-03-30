@@ -68,11 +68,5 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-    input-processors = <&zip_rotate_pointer>;  
     };
-};
-
-&zip_rotate_pointer {
-    angle = <135>;
-    sync-window = <2>; // msec
 };
