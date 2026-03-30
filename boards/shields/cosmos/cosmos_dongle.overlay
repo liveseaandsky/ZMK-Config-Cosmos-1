@@ -31,7 +31,7 @@
 //	};
 };
 &zip_rotate_pointer {
-    angle = <135>;
+    angle = <30>;
     sync-window = <2>; // msec
 };
 
