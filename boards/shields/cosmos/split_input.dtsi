@@ -6,6 +6,8 @@
     About input split device: https://zmk.dev/docs/development/hardware-integration/pointing#shared-configuration-1
 */
 
+#include <input/processors/rotate_plane.dtsi>
+
 /{
     split_inputs { // split input devices
         #address-cells = <1>;
@@ -21,5 +23,11 @@
         compatible = "zmk,input-listener";
         status = "disabled"; // disable for .keymap to add input processors without undefined reference error
         device = <&trackball_split_input>;
+        input-processors = <&zip_rotate_pointer>;  
     };
+};
+
+&zip_rotate_pointer {
+    angle = <135>;
+    sync-window = <2>; // msec
 };
