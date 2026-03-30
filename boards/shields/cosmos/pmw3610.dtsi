@@ -61,6 +61,8 @@
 };
 
 #include <input/processors/rotate_plane.dtsi>
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 &zip_rotate_pointer {
     angle = <340>;
     sync-window = <2>; // msec
@@ -72,8 +74,6 @@
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
 / {
     rotated_trackball_listener {
         compatible = "zmk,input-listener";
