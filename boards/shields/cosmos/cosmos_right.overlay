@@ -30,12 +30,12 @@
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
         <&zip_rotate_pointer>;
 };
-/ {
-    rotated_trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&zip_rotate_pointer>;
-    };
-};
+// / {
+//     rotated_trackball_listener {
+//         compatible = "zmk,input-listener";
+//         device = <&zip_rotate_pointer>;
+//     };
+// };
 
 / {
 	chosen {
