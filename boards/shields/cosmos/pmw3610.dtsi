@@ -66,12 +66,10 @@
 //     sync-window = <2>; // msec
 // };
 
-#include <dt-bindings/zmk/input_transform.h>
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
 // / {
