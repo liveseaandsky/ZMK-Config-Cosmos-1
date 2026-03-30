@@ -17,7 +17,7 @@
 
 #include <input/processors/rotate_plane.dtsi>
 &zip_rotate_pointer {
-    angle = <0>;
+    angle = <-20>;
     sync-window = <2>; // msec
 };
 
@@ -38,7 +38,8 @@
 / {
     rotated_pointer_plane {
         compatible = "zmk,input-listener";
-        device = <&zip_rotate_pointer>;
+        device = <&zip_rotate_pointer>,
+            <&zip_xy_transform>;
     };
 };
 
