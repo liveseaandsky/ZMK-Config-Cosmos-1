@@ -75,7 +75,7 @@
     };
 };
 / {
-    rotated_trackball_listener {
+    rotated_trackball_listener: rotated_trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball_listener>;
         input-processors = <&zip_rotate_pointer>;
@@ -83,6 +83,6 @@
 };
 #include "split_input.dtsi"
 &trackball_split_input { // local trackball *split* input device child node
-	device = <&zip_rotate_pointer>;
+	device = <&rotated_trackball_listener>;
 };
 
