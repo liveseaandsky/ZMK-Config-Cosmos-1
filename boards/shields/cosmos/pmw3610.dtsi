@@ -72,7 +72,7 @@
     };
 };
 
-&zip_rotate_pointer2 {
+&zip_rotate_pointer {
     angle = <135>;
     sync-window = <2>; // msec
 };
