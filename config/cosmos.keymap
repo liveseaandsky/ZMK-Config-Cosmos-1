@@ -15,6 +15,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 //Layers
+#define default 0
 #define mouse 1
 #define wasd 2
 #define esdf 3
