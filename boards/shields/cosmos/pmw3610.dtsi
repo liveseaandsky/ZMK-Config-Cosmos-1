@@ -69,7 +69,7 @@
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
-    input-processors = <&zip_rotate_pointer>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
 #include <input/processors.dtsi>
@@ -77,12 +77,12 @@
 / {
     rotated_trackball_listener {
         compatible = "zmk,input-listener";
-        device = <&zip_rotate_pointer>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        device = <&trackball_listener>;
+        input-processors = <&zip_rotate_pointer>;
     };
 };
 #include "split_input.dtsi"
 &trackball_split_input { // local trackball *split* input device child node
-	device = <&rotated_trackball_listener>;
+	device = <&zip_rotate_pointer>;
 };
 
