@@ -17,7 +17,7 @@
 
 #include <input/processors/rotate_plane.dtsi>
 &zip_rotate_pointer {
-    angle = <30>;
+    angle = <0>;
     sync-window = <2>; // msec
 };
 
