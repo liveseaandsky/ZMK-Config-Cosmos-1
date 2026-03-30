@@ -19,7 +19,7 @@
 };
 
 &trackball_split_input { // local trackball *split* input device child node
-	device = <&trackball>;
+	device = <&rotated_trackball_listener>;
 };
 
 / {
