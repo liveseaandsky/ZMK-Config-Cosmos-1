@@ -60,10 +60,20 @@
     };
 };
 
-
+#include <input/processors/rotate_plane.dtsi>
 / {
   trackball_listener {
     compatible = "zmk,input-listener";
     device = <&trackball>;
+    input-processors = <&zip_rotate_pointer>,
+    <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
+/ {
+    rotated_pointer_plane {
+        compatible = "zmk,input-listener";
+        device = <&zip_rotate_pointer>;
+    };
+};
+
+
