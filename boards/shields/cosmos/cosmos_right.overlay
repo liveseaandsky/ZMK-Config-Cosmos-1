@@ -18,14 +18,8 @@
     status = "okay";
 };
 
-#include <input/processors/rotate_plane.dtsi>
 &trackball_split_input { // local trackball *split* input device child node
 	device = <&trackball>;
-    input-processors = <&zip_rotate_pointer>;
-};
-&zip_rotate_pointer {
-    angle = <135>;
-    sync-window = <2>; // msec
 };
 
 / {
