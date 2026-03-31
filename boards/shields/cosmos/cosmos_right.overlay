@@ -26,15 +26,15 @@
 		sensor_rotation: sensor_rotation {
 			compatible = "zmk,input-processor-sensor-rotation";
 			#input-processor-cells = <0>;
-			// rotation-angle = <340>;
+			rotation-angle = <340>;
 		};
 	};
 };
 
 &trackball_split_input {
     device = <&trackball>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-        <&sensor_rotation>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        // <&sensor_rotation>;
 };
 
 / {
