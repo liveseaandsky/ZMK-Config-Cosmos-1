@@ -90,4 +90,4 @@
     };
 };
 
-#include <#include "input/processors/sensor_rotation.dtsi">
+#include <input/processors/sensor_rotation.dtsi>
