@@ -69,6 +69,7 @@
 };
 / {
   trackball_listener: trackball_listener@0 {
+    reg = <0>; // refers to the first SPI slave device
     compatible = "zmk,input-listener";
     device = <&trackball>;
     // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
