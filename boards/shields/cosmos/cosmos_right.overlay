@@ -21,7 +21,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 &trackball_split_input {
-    device = <&trackball>
+    device = <&trackball>;
     input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 };
 
