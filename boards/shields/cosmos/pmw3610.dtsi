@@ -83,6 +83,6 @@
 // };
 #include "split_input.dtsi"
 &trackball_split_input { // local trackball *split* input device child node
-	device = <&trackball_listener>;
+	device = <&trackball>;
 };
 
