@@ -62,6 +62,17 @@
 
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
+#include <input/processors/sensor_rotation.dtsi>
+/ {
+	input_processors {
+		sensor_rotation: sensor_rotation {
+			compatible = "zmk,input-processor-sensor-rotation";
+			#input-processor-cells = <0>;
+			rotation-angle = <-20>;
+		};
+	};
+};
+
 / {
 	trackball_listener: trackball_listener {
 		status = "okay";
@@ -70,20 +81,10 @@
 		// input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 	};
 };
+
 #include "split_input.dtsi"
 &trackball_split_input { // local trackball *split* input device child node
 	device = <&trackball>;
 	input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
 		<&sensor_rotation>;
 };
-/ {
-    input_processors {
-        sensor_rotation: sensor_rotation {
-            compatible = "zmk,input-processor-sensor-rotation";
-            #input-processor-cells = <0>;
-            rotation-angle = <-20>;
-        };
-    };
-};
-
-#include <input/processors/sensor_rotation.dtsi>
