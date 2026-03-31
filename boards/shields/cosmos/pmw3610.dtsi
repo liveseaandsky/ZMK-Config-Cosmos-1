@@ -62,10 +62,6 @@
 
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-&zip_rotate_pointer {
-	angle = <340>;
-	sync-window = <2>; // msec
-};
 / {
 	trackball_listener: trackball_listener {
 		status = "okay";
