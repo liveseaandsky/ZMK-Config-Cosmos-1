@@ -15,21 +15,8 @@
 	transform = <&default_transform>;
 };
 
-#include <input/processors/sensor_rotation.dtsi>
-/ {
-	input_processors {
-		sensor_rotation: sensor_rotation {
-			compatible = "zmk,input-processor-sensor-rotation";
-			#input-processor-cells = <0>;
-			rotation-angle = <340>;
-		};
-	};
-};
-
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
 	status = "okay";
-	// input-processors = <&sensor_rotation>;
-
 
 //    	input-processors = 
 //		    <&pointer_accel>;
