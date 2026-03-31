@@ -18,8 +18,7 @@
 };
 
 &trackball_split_input {
-    status = "okay";
-  
+    device = <&trackball>;  
 };
 
 / {
