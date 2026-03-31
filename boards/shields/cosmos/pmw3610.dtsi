@@ -73,14 +73,14 @@
 	};
 };
 
-/ {
-	trackball_listener: trackball_listener {
-		status = "okay";
-		compatible = "zmk,input-listener";
-		device = <&trackball>;
-		// input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
-	};
-};
+// / {
+// 	trackball_listener: trackball_listener {
+// 		status = "okay";
+// 		compatible = "zmk,input-listener";
+// 		device = <&trackball>;
+// 		// input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+// 	};
+// };
 
 #include "split_input.dtsi"
 &trackball_split_input { // local trackball *split* input device child node
