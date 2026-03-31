@@ -85,6 +85,6 @@
 #include "split_input.dtsi"
 &trackball_split_input { // local trackball *split* input device child node
 	device = <&trackball>;
-	input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-		<&sensor_rotation>;
+	input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+		// <&sensor_rotation>;
 };
