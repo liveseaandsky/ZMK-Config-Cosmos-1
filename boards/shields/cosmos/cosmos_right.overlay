@@ -17,6 +17,10 @@
     status = "okay";
 };
 
+&trackball_split_input {
+    status = "okay";
+  
+};
 
 / {
 	chosen {
