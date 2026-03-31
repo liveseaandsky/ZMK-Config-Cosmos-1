@@ -60,7 +60,6 @@
 	};
 };
 
-#include <input/processors/rotate_plane.dtsi>
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 &zip_rotate_pointer {
