@@ -5,8 +5,6 @@
     This is so that keymaps (which are included for both central and peripheral builds) can reference the listener to add input processors without failing with an undefined reference error.
     About input split device: https://zmk.dev/docs/development/hardware-integration/pointing#shared-configuration-1
 */
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
 
 /{
     split_inputs { // split input devices
@@ -23,7 +21,6 @@
         compatible = "zmk,input-listener";
         status = "disabled"; // disable for .keymap to add input processors without undefined reference error
         device = <&trackball_split_input>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
     };
 };
 
