@@ -1,6 +1,7 @@
 #include "cosmos.dtsi"
 #include "cosmos-layouts.dtsi"
 #include "pmw3610.dtsi"
+#include "split_input.dtsi"
 
 &default_transform {
     col-offset = <6>;
@@ -18,7 +19,8 @@
 };
 
 &trackball_split_input {
-    device = <&trackball>;  
+    device = <&trackball>;
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 };
 
 / {

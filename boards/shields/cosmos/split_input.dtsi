@@ -6,17 +6,6 @@
 	About input split device: https://zmk.dev/docs/development/hardware-integration/pointing#shared-configuration-1
 */
 
-#include <input/processors/sensor_rotation.dtsi>
-/ {
-	input_processors {
-		sensor_rotation: sensor_rotation {
-			compatible = "zmk,input-processor-sensor-rotation";
-			#input-processor-cells = <0>;
-			rotation-angle = <340>;
-		};
-	};
-};
-
 / {
 	split_inputs { // split input devices
 		#address-cells = <1>;
