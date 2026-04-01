@@ -8,7 +8,7 @@
 
 #include <input/processors.dtsi>
 
-/{
+/ {
     split_inputs { // split input devices
         #address-cells = <1>;
         #size-cells = <0>;
