@@ -20,11 +20,6 @@
 	angle = <340>;
 	sync-window = <2>; // msec
 };
-#include <input/processors/rotate_plane.dtsi>
-&zip_rotate_pointer {
-	angle = <340>;
-	sync-window = <2>; // msec
-};
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
 	status = "okay";
     input-processors = <&zip_rotate_pointer>;
@@ -38,6 +33,12 @@
 //            <&zip_xy_scaler 1 16>,
 //            <&zip_xy_to_scroll_mapper>;
 //	};
+};
+/ {
+    rotated_pointer_plane {
+        compatible = "zmk,input-listener";
+        device = <&zip_rotate_pointer>;
+    };
 };
 
 / {
