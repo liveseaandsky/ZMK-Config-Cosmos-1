@@ -17,7 +17,7 @@
 
 #include <input/processors/rotate_plane.dtsi>
 &zip_rotate_pointer {
-	angle = <340>;
+	angle = <240>;
 	sync-window = <2>; // msec
 };
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
