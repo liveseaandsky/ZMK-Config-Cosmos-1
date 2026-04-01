@@ -34,13 +34,13 @@
 //            <&zip_xy_to_scroll_mapper>;
 //	};
 };
-// / {
-//     rotated_pointer_plane {
-//         compatible = "zmk,input-listener";
-//         device = <&zip_rotate_pointer>;
-//         input-processors = <&zip_temp_layer 1 500>;
-//     };
-// };
+/ {
+    rotated_pointer_plane {
+        compatible = "zmk,input-listener";
+        device = <&zip_rotate_pointer>;
+        input-processors = <&zip_temp_layer 1 500>;
+    };
+};
 
 / {
     chosen {
