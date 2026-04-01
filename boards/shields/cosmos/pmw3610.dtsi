@@ -59,12 +59,3 @@
 		/* NOTE: apply this mode if you need 250Hz with direct USB connection. */
 	};
 };
-
-/ {
-	trackball_listener: trackball_listener {
-		status = "okay";
-		compatible = "zmk,input-listener";
-		device = <&trackball>;
-	};
-};
-
