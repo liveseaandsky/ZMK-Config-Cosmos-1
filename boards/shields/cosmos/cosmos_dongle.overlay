@@ -22,7 +22,7 @@
 };
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
 	status = "okay";
-    // input-processors = <&zip_rotate_pointer>;  
+    input-processors = <&zip_rotate_pointer>;  
 
 //    	input-processors = 
 //		    <&pointer_accel>;
