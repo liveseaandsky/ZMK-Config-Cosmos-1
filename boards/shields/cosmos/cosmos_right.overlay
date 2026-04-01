@@ -33,7 +33,8 @@
 
 &trackball_split_input {
     device = <&trackball>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&sensor_rotation>;
+    input-processors = <&sensor_rotation>;
+    // <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
 };
 
 / {
