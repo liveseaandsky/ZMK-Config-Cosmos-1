@@ -159,10 +159,10 @@
 		mouse_layer {
             display-name = "Mouse";   
 			bindings = <
-&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &mkp LCLK &mkp RCLK &mkp MCLK &trans  &trans
-&trans  &trans    &trans   &trans    &trans    &trans   &trans             &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &mkp LCLK &mkp RCLK &trans    &mkp MCLK &trans
+&trans  &trans    &trans   &trans    &trans    &trans   &trans             &trans  &trans    &trans    &trans    &trans    &trans
                   &trans   &trans       &trans    &trans   &trans                                      &trans    &trans
                                                   &trans   &trans                                   &trans
 			>;
