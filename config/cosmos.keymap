@@ -65,7 +65,22 @@
         };
     };
 };
-	
+
+/ {
+    behaviors {
+        as: auto_trackball_scroll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "AUTO_TRACKBALL_SCROLL";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <125>;
+			global-quick-tap;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&zip_xy_to_scroll_mapper>;
+        };
+    };
+};
+
 / {
     behaviors {
         tdmedia: tap_dance_media {
