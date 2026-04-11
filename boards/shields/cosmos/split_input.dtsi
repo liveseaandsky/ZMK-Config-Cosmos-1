@@ -7,7 +7,7 @@
 */
 
 #include <input/processors.dtsi>
-#include <dt-bindings/input/input-event-codes.h>
+// #include <dt-bindings/input/input-event-codes.h>
 
 / {
     split_inputs { // split input devices
