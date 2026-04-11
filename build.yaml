@@ -3,12 +3,12 @@ include:
     shield: cosmos_left
   - board: nice_nano//zmk
     shield: cosmos_right
-    snippet: zmk-usb-logging
+    # snippet: zmk-usb-logging
   - board: nice_nano//zmk
     shield: settings_reset
 
   - board: xiao_ble//zmk
     shield: cosmos_dongle prospector_adapter
-    snippet: zmk-usb-logging
+    # snippet: zmk-usb-logging
   - board: xiao_ble//zmk
     shield: settings_reset
