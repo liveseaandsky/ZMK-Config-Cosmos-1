@@ -146,6 +146,13 @@
     };
 };
 
+#include <input/processors.dtsi>
+&trackball_split_listener {
+    scroller {
+        layers = <7>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+};
 
 / {
     keymap {
