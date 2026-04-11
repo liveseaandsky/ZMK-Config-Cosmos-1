@@ -12,7 +12,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 &physical_layout0 {
-    transform = <&default_transform>;
+	transform = <&default_transform>;
 };
 
 #include <input/processors/rotate_plane.dtsi>
@@ -20,15 +20,16 @@
 	angle = <20>;
 	sync-window = <2>; // msec
 };
+
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
 	status = "okay";
-    input-processors = <&zip_rotate_pointer>;
+	input-processors = <&zip_rotate_pointer>;
 
-    scroller {
-        layers = <7>;
-        input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
-        process-next;
-    };
+	scroller {
+		layers = <7>;
+		input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+		process-next;
+	};
 //    	input-processors = 
 //		    <&pointer_accel>;
 //	scroll {
@@ -39,24 +40,25 @@
 //            <&zip_xy_to_scroll_mapper>;
 //	};
 };
+
 / {
-    rotated_pointer_plane {
-        compatible = "zmk,input-listener";
-        device = <&zip_rotate_pointer>;
-        input-processors = <&zip_temp_layer 1 500>;
-    };
+	rotated_pointer_plane {
+		compatible = "zmk,input-listener";
+		device = <&zip_rotate_pointer>;
+		input-processors = <&zip_temp_layer 1 500>;
+	};
 };
 
 / {
-    chosen {
-        zmk,kscan = &mock_kscan;
-        zmk,matrix_transform = &default_transform;
-    };
+	chosen {
+		zmk,kscan = &mock_kscan;
+		zmk,matrix_transform = &default_transform;
+	};
 
-    mock_kscan: mock_kscan_0 {
-        compatible = "zmk,kscan-mock";
-        columns = <0>;
-        rows = <0>;
-        events = <0>;
-    };
+	mock_kscan: mock_kscan_0 {
+		compatible = "zmk,kscan-mock";
+		columns = <0>;
+		rows = <0>;
+		events = <0>;
+	};
 };
