@@ -26,6 +26,12 @@
 	input-processors = <&zip_rotate_pointer>;
 };
 
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&zip_temp_layer {
+	excluded-positions = <19 20 31 32 33 34>; 
+};
+
 / {
 	rotated_pointer_plane {
 		compatible = "zmk,input-listener";
