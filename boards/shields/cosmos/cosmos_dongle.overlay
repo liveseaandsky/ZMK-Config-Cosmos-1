@@ -24,15 +24,6 @@
 &trackball_split_listener { // local trackball input split device child node, receiving events from the peripheral and raising them locally
 	status = "okay";
 	input-processors = <&zip_rotate_pointer>;
-
-	scroller {
-		layers = <7>; //scroll layer
-		input-processors = 
-			// <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
-			<&zip_xy_scaler 1 16>,
-			<&zip_xy_to_scroll_mapper>;
-		process-next;
-	};
 };
 
 / {
@@ -40,6 +31,15 @@
 		compatible = "zmk,input-listener";
 		device = <&zip_rotate_pointer>;
 		input-processors = <&zip_temp_layer 1 500>;
+
+		scroller {
+			layers = <7>; //scroll layer
+			input-processors = 
+				// <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
+				<&zip_xy_scaler 1 16>,
+				<&zip_xy_to_scroll_mapper>;
+			process-next;
+		};
 	};
 };
 
