@@ -30,12 +30,13 @@
 	rotated_pointer_plane {
 		compatible = "zmk,input-listener";
 		device = <&zip_rotate_pointer>;
-		input-processors = <&zip_temp_layer 1 500>;
+		input-processors = <&zip_temp_layer 1 500>,
+			<&zip_xy_scaler 1 2>; // 1/2 sensitivity
 
 		scroller {
 			layers = <7>; //scroll layer
 			input-processors = 
-				<&zip_xy_scaler 1 16>,
+				<&zip_xy_scaler 1 8>, // 1/8 sensitivity
 				<&zip_xy_to_scroll_mapper>,
 				<&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
 			process-next;
