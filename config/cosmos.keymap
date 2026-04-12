@@ -287,7 +287,7 @@
             bindings = <
 &trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans    &trans
 &trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans    &trans
-&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans   &trans    &trans    &trans                      &trans  &trans    &trans    &mo mouse &trans    &trans
 &trans  &trans    &trans   &trans    &trans    &trans   &trans             &trans  &trans    &trans    &trans    &trans    &trans
                   &trans   &trans       &trans    &trans   &trans                                      &trans    &trans
                                                   &trans   &trans                                   &trans
