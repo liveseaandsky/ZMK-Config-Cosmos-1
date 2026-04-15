@@ -261,10 +261,10 @@
 // |SHIFT|   α  |   β  |   ε   |   λ   |   π  |      |  |      |   ∀   |   ∃   |   !   |   ?   |   ∂   | SHIFT |
 //              |      |       |       |      |      |  |      |       |       |       |       |
             bindings = <
-&none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE2 &kp UNDER &none    &trans 
-&kp TAB    &none        &none        &kp LS(SQT)  &kp NUHS     &kp AMPS                 &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &trans
-&trans     &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
-&none      &none        &none        &none        &none        &none    &trans          &none        &none     &kp EXCL   &kp QMARK &none    &kp RSHFT 
+&none      &equiv       &inter         &union         &subset         &kp DLLR                    &kp DLLR     &kp PRCNT &kp TILDE2 &kp UNDER &none    &trans 
+&kp TAB    &none        &none          &kp LS(SQT)    &kp NUHS        &kp AMPS                    &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &trans
+&xcirc     &le          &ge            &kp LT         &kp GT          &ne                         &kp KP_EQUAL &larr     &rarr      &lrarr    &darr    &none    
+&none      &alpha       &beta          &eps           &lambda         &pi      &trans          &fa   &ex   &kp EXCL   &kp QMARK &partial &kp RSHFT 
                         &trans       &trans       &trans       &trans   &trans                                 &trans     &trans 
                                                   &trans   &trans                                         &trans
 

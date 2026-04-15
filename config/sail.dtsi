@@ -3,25 +3,130 @@
  */
 
 #include <behaviors.dtsi>
+#include "../zmk-unicode/unicode.dtsi"
 
 / {
-	macros {
-		ZMK_MACRO(equiv,
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings
-				= <&macro_tap     &kp RALT &kp U &kp KP_N2 &kp KP_N2 &kp KP_N6 &kp KP_N1 &kp RET>;
-		)
-	};
-};
-
-/ {
-	macros {
-		ZMK_MACRO(equiv2,
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings
-				= <&macro_tap     &kp KP_N2 &kp KP_N2 &kp KP_N6 &kp KP_N1 &kp LALT &kp X>;
-		)
-	};
+    macros {
+        // SAIL Layer Unicode Symbols using zmk-unicode module
+        equiv: equiv {
+            label = "Triple Bar";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2261>;
+        };
+        inter: inter {
+            label = "Intersection";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2229>;
+        };
+        union: union {
+            label = "Union";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 222A>;
+        };
+        subset: subset {
+            label = "Subset";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2282>;
+        };
+        xcirc: xcirc {
+            label = "Circled X";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2297>;
+        };
+        le: le {
+            label = "Less or Equal";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2264>;
+        };
+        ge: ge {
+            label = "Greater or Equal";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2265>;
+        };
+        ne: ne {
+            label = "Not Equal";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2260>;
+        };
+        larr: larr {
+            label = "Left Arrow";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2190>;
+        };
+        rarr: rarr {
+            label = "Right Arrow";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2192>;
+        };
+        lrarr: lrarr {
+            label = "Left-Right Arrow";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2194>;
+        };
+        darr: darr {
+            label = "Down Arrow";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2193>;
+        };
+        alpha: alpha {
+            label = "Alpha";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 03B1>;
+        };
+        beta: beta {
+            label = "Beta";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 03B2>;
+        };
+        eps: eps {
+            label = "Epsilon";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 03B5>;
+        };
+        lambda: lambda {
+            label = "Lambda";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 03BB>;
+        };
+        pi: pi {
+            label = "Pi";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 03C0>;
+        };
+        fa: fa {
+            label = "For All";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2200>;
+        };
+        ex: ex {
+            label = "Exists";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2203>;
+        };
+        partial: partial {
+            label = "Partial Derivative";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&u_macro 2202>;
+        };
+    };
 };
