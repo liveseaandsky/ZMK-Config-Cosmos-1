@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: efogdev
       url-base: https://github.com/efogdev/ # Trackball Sensor Rotation
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
@@ -28,6 +30,9 @@ manifest:
       revision: feat/new-status-screens 
     - name: zmk-input-processor-rotate-plane
       remote: efogdev
+      revision: main
+    - name: zmk-tri-state
+      remote: dhruvinsh
       revision: main
   self:
     path: config
