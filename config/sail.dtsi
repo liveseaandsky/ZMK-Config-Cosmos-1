@@ -3,7 +3,7 @@
  */
 
 #include <behaviors.dtsi>
-#include "../zmk-unicode/unicode.dtsi"
+#include <zmk-unicode/unicode.dtsi>
 
 / {
     macros {
