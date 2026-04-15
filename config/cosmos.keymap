@@ -134,6 +134,19 @@
 
 / {
     behaviors {
+        swapper: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <2 3 4 5 6 7 8 9 10>;
+            ignored-layers = <5>;
+        };
+    };
+};
+
+/ {
+    behaviors {
         tb_scroll: tb_scroll {
             compatible = "zmk,behavior-hold-tap";
             label = "TB_SCROLL_MODE";
