@@ -5,7 +5,7 @@
 #include <behaviors.dtsi>
 
 / {
-    macros {
+	macros {
 		ZMK_MACRO(equiv,
 			wait-ms = <0>;
 			tap-ms = <0>;
@@ -16,7 +16,7 @@
 };
 
 / {
-    macros {
+	macros {
 		ZMK_MACRO(equiv2,
 			wait-ms = <0>;
 			tap-ms = <0>;
