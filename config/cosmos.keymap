@@ -239,12 +239,12 @@
 // |     | CTRL |      |       |       |      |      |  |      |      |      |       |      | CTRL  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&none      &none         &none        &none        &none        &none                       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &out OUT_TOG
-&atab      &none         &kp HOME     &kp UP       &kp END      &kp PG_UP                   &kp PG_UP  &kp HOME     &kp UP       &kp END      &kp PSCRN     &none
-&trans     &kp LCTRL     &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                   &kp PG_DN  &kp LEFT     &kp DOWN     &kp RIGHT    &kp RCTRL     &kp RSHFT
-&trans     &kp LSHIFT    &none        &none        &none        &none      &trans           &none      &none        &none        &none        &kp LS(LCTRL) &trans
-                         &trans       &trans       &trans       &trans     &trans                                   &trans       &trans
-                                                                &trans     &trans                                      &trans
+&none      &none         &none            &none             &none        &none                       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &out OUT_TOG
+&atab      &none         &kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp END      &kp PG_UP                   &kp PG_UP  &kp HOME     &kp UP       &kp END      &kp PSCRN     &none
+&trans     &kp LCTRL     &kp LEFT         &kp DOWN          &kp RIGHT    &kp PG_DN                   &kp PG_DN  &kp LEFT     &kp DOWN     &kp RIGHT    &kp RCTRL     &trans
+&trans     &kp LSHIFT    &kp HOME         &none             &kp END      &none      &trans           &none      &none        &none        &none        &kp RSHFT     &trans
+                         &trans           &trans            &trans       &trans     &trans                                   &trans       &trans
+                                                                 &trans       &trans                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_up_down>;
