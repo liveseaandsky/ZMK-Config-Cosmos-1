@@ -261,11 +261,11 @@
 // |     | CTRL |      |       |       |      |      |  |      |      |      |       |      | CTRL  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG                &out OUT_TOG    &out OUT_BLE    &out OUT_USB    &none     &none         &none
-&swapper   &none     &kp HOME     &kp UP       &kp END      &kp PG_UP                   &kp PG_UP       &kp HOME        &kp UP          &kp END   &kp PSCRN     &none
-&kp LSHIFT &kp LCTRL     &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                   &kp PG_DN       &kp LEFT        &kp DOWN        &kp RIGHT &kp RCTRL     &kp RSHFT
-&trans     &kp LS(LCTRL) &none        &none        &none        &none      &trans           &none           &none           &none           &none     &kp LS(LCTRL) &trans
-                         &trans       &trans       &trans       &trans     &trans                                           &trans          &trans
+&none      &none         &none        &none        &none        &none                       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &out OUT_TOG
+&swapper   &none         &kp HOME     &kp UP       &kp END      &kp PG_UP                   &kp PG_UP  &kp HOME     &kp UP       &kp END      &kp PSCRN     &none
+&kp LSHIFT &kp LCTRL     &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                   &kp PG_DN  &kp LEFT     &kp DOWN     &kp RIGHT    &kp RCTRL     &kp RSHFT
+&trans     &kp LS(LCTRL) &none        &none        &none        &none      &trans           &none      &none        &none        &none        &kp LS(LCTRL) &trans
+                         &trans       &trans       &trans       &trans     &trans                                   &trans       &trans
                                                                 &trans     &trans                                      &trans
             >;
 
