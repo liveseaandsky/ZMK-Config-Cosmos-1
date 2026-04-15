@@ -2,6 +2,8 @@
  * Special characters for the SAIL keycaps
  */
 
+#include <behaviors.dtsi>
+
 / {
     macros {
 		ZMK_MACRO(equiv,
