@@ -2,25 +2,24 @@
  * Special characters for the SAIL keycaps
  */
 
-#include <behaviors.dtsi>
-#include <zmk-unicode/unicode.dtsi>
+#include <behaviors/unicode.dtsi>
 
 / {
-    macros {
-        // SAIL Layer Unicode Symbols using zmk-unicode module
-        equiv: equiv {
-            label = "Triple Bar";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&u_macro 2261>;
-        };
-        inter: inter {
-            label = "Intersection";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&u_macro 2229>;
-        };
-        union: union {
+	macros {
+		// SAIL Layer Unicode Symbols using zmk-unicode module
+		equiv: equiv {
+			label = "Triple Bar";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&u_macro 2261>;
+		};
+		inter: inter {
+			label = "Intersection";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&u_macro 2229>;
+		};
+		union: union {
             label = "Union";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
