@@ -117,8 +117,8 @@
             label = "Alt-Tab";
             #binding-cells = <0>;
             bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <2 3 4 5 6 7 8 9 10>;
-            ignored-layers = <5>;
+            // ignored-key-positions = <2 3 4 5 6 7 8 9 10>;
+            // ignored-layers = <5>;
         };
     };
 };
