@@ -133,8 +133,9 @@
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  DEL  |
 // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
 // |  SAIL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |  MIC  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-//               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
+// |  ALT  |  Z  |  X  |  C   |  V   |  B   |  MEDIA |          |  N   |  M    |  ,    |  .   |   /   |   \   |
+//               | GUI |RAISE | NAV  | SHIFT|  SPACE |                         | NAV   | Game |
+
             bindings = <
 &kp ESC       &ac F1 N1 &ac F2 N2 &ac F3 N3  &ac F4 N4 &ac F5 N5                            &ac F6 N6    &ac F7 N7 &ac F8 N8  &ac F9 N9           &ac F10 N0 &kp DEL 
 &kp TAB       AC(Q)     AC(W)     AC(E)     AC(R)      AC(T)                                AC(Y)        AC(U)     AC(I)      AC(O)               AC(P)      &kp BSPC
@@ -196,11 +197,13 @@
         sym_layer {
             display-name = "Symbols";   
 // ------------------------------------------------------------------------------------------------------------
-// |  NUM  |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-// | `     |  _  |  *  |      |  {   |   }  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
-// |       |  -  |  +  |  =   |  (   |  )   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-// |       |     |     |      |  [   |  ]   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
-//               |     |      |      |      |        |  |       |      |       |       |      |
+// | NUM |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
+// |     |  _  |  *  |      |  {   |   }  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
+// |     |  -  |  +  |  =   |  (   |  )   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
+// |     |     |     |      |  [   |  ]   |      |            |  [   |  ]    |  ;    |  :   |   \   |       |
+//             |     |      |      |      |      |                           |       |      |
+//                                 |      |      |    
+
             bindings = <
 &kp KP_NUM  &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                     &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &trans
 &trans      &kp UNDER &kp STAR  &none       &kp LBRC  &kp RBRC                   &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &trans
@@ -219,18 +222,19 @@
         nav_layer {
             display-name = "Nav";   
 // ------------------------------------------------------------------------------------------------------------
-// |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     |      | HOME |   ^   |  END  | PGUP |                | PGUP | HOME |   ^   |  END |       |       |
-// |SHIFT| SHIFT|   <- |   v   |  ->   | PGDN |                | PGDN |   <- |   v   |  ->  | SHFIT | SHIFT |
-// |     | CTRL |      |       |       |      |      |  |      |      |      |       |      | CTRL  |       |
-//              |      |       |       |      |      |  |      |      |      |       |      |
+// |     |      |      |       |       |      |                |BTCLR | BT1  |  BT2  |  BT3  |  BT4  |  BT5  |
+// |     |      | WIN← |   ↑   |  WIN→ | PGUP |                | PGUP | WIN← |   ↑   |  WIN→ |       |       |
+// |SHIFT| SHIFT|   ←  |   ↓   |   →   | PGDN |                | PGDN |   ←  |   ↓   |   →   | CTRL  |       |
+// |     | CTRL | HOME |       |  END  |      |      |                       |       |       | SHIFT |       |
+//              |      |       |       |      |      |                       |       |       |
+
             bindings = <
-&none      &none         &none            &none             &none        &none                       &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  &out OUT_TOG
+&none      &none            &none    &none             &none        &none                       &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1 &bt BT_SEL 2      &bt BT_SEL 3  &out OUT_TOG
 &atab      &none         &kp LG(LS(LEFT)) &kp LG(LS(RIGHT)) &kp END      &kp PG_UP                   &kp PG_UP  &kp HOME     &kp UP       &kp END      &kp PSCRN     &none
-&trans     &kp LCTRL     &kp LEFT         &kp DOWN          &kp RIGHT    &kp PG_DN                   &kp PG_DN  &kp LEFT     &kp DOWN     &kp RIGHT    &kp RCTRL     &trans
-&trans     &kp LSHIFT    &kp HOME         &none             &kp END      &none      &trans           &none      &none        &none        &none        &kp RSHFT     &trans
-                         &trans           &trans            &trans       &trans     &trans                                   &trans       &trans
-                                                                 &trans       &trans                                      &trans
+&trans     &kp LCTRL        &kp LEFT &kp DOWN          &kp RIGHT    &kp PG_DN                   &kp PG_DN  &kp LEFT         &kp DOWN     &kp RIGHT         &kp RCTRL     &trans
+&trans     &kp LSHIFT       &kp HOME &none             &kp END      &none      &trans           &none      &none            &none        &none             &kp RSHFT     &trans
+                            &trans   &trans            &trans       &trans     &trans                                       &trans       &trans
+                                                                    &trans     &trans                                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_up_down>;
