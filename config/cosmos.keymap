@@ -75,6 +75,21 @@
     };
 };
 
+/ {
+    macros {
+        shft_ret: shft_ret {
+            compatible = "zmk,behavior-macro";
+            label = "Alt-SHIFT-RETURN";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp RET>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+};
+
 // Layer reated behaviours
 
 / {
@@ -147,7 +162,7 @@
 &lt SAIL STAR AC(A)     AC(S)     AC(D)     AC(F)      AC(G)                                AC(H)        AC(J)     AC(K)      &tb_scroll scroll L &kp SEMI   &kp SQT
 &kp LALT      AC(Z)     AC(X)     AC(C)     AC(V)      AC(B)   &kp C_PLAY_PAUSE             AC(N)        AC(M)     &kp COMMA  &kp DOT             &kp FSLH   &kp NUBS
                         &kp LWIN  &kp LCTRL &mo nav    &kp LSHFT  &lt sym SPACE                                    &mo nav    &tdg
-                                                       &kp LCTRL  AS(RET)                                     &tdmedia
+                                                       &kp LCTRL  AC(RET)                                     &tdmedia
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &scroll_up_down>;
@@ -215,7 +230,7 @@
 &trans      &kp MINUS &kp PLUS  &kp EQUAL   &kp LPAR  &kp RPAR                   &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp PIPE
 &trans      &none     &none     &none       &kp LBKT  &kp RBKT   &trans          &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &trans    &trans
                       &trans    &trans      &trans    &trans     &trans                             &trans          &trans
-                                                      &trans     &trans                        &trans
+                                                      &trans     &shft_ret                        &trans
 
             >;
 
