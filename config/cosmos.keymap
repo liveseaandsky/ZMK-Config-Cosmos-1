@@ -31,6 +31,8 @@
 #define AC(keycode) &ht LC(keycode) keycode     // Autoctrl Macro
 #define AS(keycode) &ht LS(keycode) keycode     // Autoshift Macro
 
+// Hold Behaviors
+
 / {
     behaviors {
         ht: hold_tap {
@@ -47,19 +49,6 @@
 
 / {
     behaviors {
-        tdmedia: tap_dance_media {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MEDIA";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings =
-				<&ht C_MUTE C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
-        };
-    };
-};
-
-/ {
-    behaviors {
         hltl: hold_layer_tap_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_LAYER_TAP_LAYER";
@@ -69,6 +58,34 @@
 			global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&mo>, <&tog>;
+        };
+    };
+};
+
+/ {
+    behaviors {
+        atab: atab {
+            compatible = "zmk,behavior-tri-state";
+            label = "Alt-Tab";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            // ignored-key-positions = <2 3 4 5 6 7 8 9 10>;
+            // ignored-layers = <5>;
+        };
+    };
+};
+
+// Layer reated behaviours
+
+/ {
+    behaviors {
+        tdmedia: tap_dance_media {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MEDIA";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings =
+				<&ht C_MUTE C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
         };
     };
 };
@@ -110,18 +127,6 @@
     };
 };
 
-/ {
-    behaviors {
-        atab: atab {
-            compatible = "zmk,behavior-tri-state";
-            label = "Alt-Tab";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            // ignored-key-positions = <2 3 4 5 6 7 8 9 10>;
-            // ignored-layers = <5>;
-        };
-    };
-};
 
 / {
     keymap {
