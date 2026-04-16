@@ -255,10 +255,10 @@
 		sail_layer {
             display-name = "SAIL";   
 // ------------------------------------------------------------------------------------------------------------
-// |     |  ≡   |   ∩  |   ∪   |   ⊂   |   $  |                |   $   |   %   |   ~   |   _   |       |       |
-// |     |      |      |   @   |   #   |   &  |                |       |   `   |   '   |   {   |   }   |  BKSP |
-// |  ⊗  |  ≤   |   ≥  |   <   |   >   |   ≠  |                |   =   |   ←   |   →   |   ↔   |   ↓   |       |
-// |SHIFT|   α  |   β  |   ε   |   λ   |   π  |      |  |      |   ∀   |   ∃   |   !   |   ?   |   ∂   | SHIFT |
+// |     |  ≡   |   ∩  |   ∪   |   ⊂  |   ⊃  |                |   $   |   %   |   ~   |   _   |       |   ∞   |
+// |     |      |      |   @   |   #   |   &  |                |       |   `   |   ´   |   {   |   }   |  BKSP |
+// |  ⊗ |  ≤   |   ≥  |   <   |   >   |   ≠  |                |   =   |   ←   |   →   |   ↔   |   ↓   |       |
+// |SHIFT|   α  |   β  |   ε   |   λ   |   π  |      |  |      |   ∀   |   ∃   |   !   |   ?   |   ∂   |   ∞   |
 //              |      |       |       |      |      |  |      |       |       |       |       |
             bindings = <
 &kp ESC              &uc UC_IDENTICAL_TO          &uc UC_INTERSECTION            &uc UC_UNION      &uc UC_SUBSET_OF &kp UC_SUPERSET_OF               &kp DLLR                    &kp PRCNT              &kp TILDE2              &kp UNDER               &uc UC_EMPTY_SET            &uc UC_INFINITY 
