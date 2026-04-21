@@ -8,8 +8,6 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: efogdev
-      url-base: https://github.com/efogdev/ # Trackball Sensor Rotation
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
     - name: urob
