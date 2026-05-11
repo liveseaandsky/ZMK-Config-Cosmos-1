@@ -16,6 +16,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <zmk-unicode/keys-extra.h>
 
+#include "cosmos_behaviors.dtsi"
+
 //Layers
 #define default 0
 #define mouse 1
