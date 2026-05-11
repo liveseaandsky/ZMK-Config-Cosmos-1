@@ -3,26 +3,25 @@
 #include "pmw3610.dtsi"
 #include "split_input.dtsi"
 &default_transform {
-    col-offset = <6>;
+	col-offset = <6>;
 };
 
 &right_encoder {
-    a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    status = "okay";
+	a-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+	b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+	status = "okay";
 };
 
-
 &spi0 {
-    status = "okay";
+	status = "okay";
 };
 
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 
 &trackball_split_input {
-    device = <&trackball>;
-    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
+	device = <&trackball>;
+	input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>;
 };
 
 / {
@@ -30,24 +29,24 @@
 		zmk,kscan = &kscan0;
 	};
 
-    kscan0: kscan0 {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "row2col";
-        wakeup-source;
-        col-gpios
-            = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
-        row-gpios
-            = <&gpio1 7 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 6 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 7 GPIO_ACTIVE_HIGH>
-            , <&gpio1 2 GPIO_ACTIVE_HIGH>
-            , <&pro_micro 9 GPIO_ACTIVE_HIGH>
-            ;
-    };
+	kscan0: kscan0 {
+		compatible = "zmk,kscan-gpio-matrix";
+		diode-direction = "row2col";
+		wakeup-source;
+		col-gpios
+			= <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			, <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+			;
+		row-gpios
+			= <&gpio1 7 GPIO_ACTIVE_HIGH>
+			, <&pro_micro 6 GPIO_ACTIVE_HIGH>
+			, <&pro_micro 7 GPIO_ACTIVE_HIGH>
+			, <&gpio1 2 GPIO_ACTIVE_HIGH>
+			, <&pro_micro 9 GPIO_ACTIVE_HIGH>
+			;
+	};
 };
